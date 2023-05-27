@@ -161,6 +161,9 @@ const App = () => {
   )
 } */
 
+/* ejercicio 1.1 - 1.2 */
+
+/* 
 const Header = (props) =>{
   return(
    <h1>{props.course}</h1>
@@ -207,11 +210,63 @@ const App = () =>{
     </div>
   )
 }
+ */
+
+/* fin */
 
 
 
+/* ejercicio 1.3 - 1.4 */
 
+const Header = (props) =>{
+  console.log(props)
+  return <h1>{props.course}</h1>
+}
 
+/* const App = () =>{
+  const course = "desarrollo de aplicacion"
+  const parte1 = {
+    name: 'fundamentos de reac',
+    exercises: 7
+  }
+  const parte2 = {
+    name: 'usando props para pasar datos',
+    exercises:46
+  }
+  const parte3 = {
+    name: 'estado del componente',
+    exercises: 55
+  }
+  return(
+    <div>
+
+    </div>
+  )
+} */
+
+const App = () =>{
+  const course = "desarrollo de aplicacion"
+  const partes = [
+    {
+    name: 'fundamentos de reac',
+    exercises: 7
+  },{
+    name: 'usando props para pasar datos',
+    exercises:46
+  },
+ {
+    name: 'estado del componente',
+    exercises: 55
+  }
+  ]
+  return(
+    <div>
+
+    </div>
+  )
+}
+
+/* fin */
 
 
 ReactDOM.render(<App/>, document.getElementById('root')) 
